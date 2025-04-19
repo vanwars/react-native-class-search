@@ -5,19 +5,17 @@ import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-import { IconSymbol } from '@/components/ui/IconSymbol';
 
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
-          style={styles.headerImage}
-        />
+        <Image
+                  source={require('@/assets/images/banner1.jpg')}
+                  style={styles.image}
+                  resizeMode="cover"
+                />
       }>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Explore</ThemedText>
@@ -105,5 +103,14 @@ const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: 'row',
     gap: 8,
+  },
+  container: {
+    flex: 1,
+    width: '100%',   // Make sure the container is full width
+    height: 300,     // Set a fixed height for the container
+  },
+  image: {
+    width: '100%',   // Make the image take up the full width of the container
+    height: '100%',  // Make the image take up the full height of the container
   },
 });
