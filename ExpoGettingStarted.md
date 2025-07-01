@@ -1,20 +1,9 @@
-# README
+# Welcome to your Expo app 👋
 
-## Setup
-### On your Laptop
-Please ensure the following are installed on your laptop:
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-* Node
-* Expo
-* Code Editor (e.g., VS Code)
+## Get started
 
-More Info here: [https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup)
-
-### On your Mobile Device
-* Go to the Play Store and install Expo on your device
-
-
-## Configure and run this code
 1. Install dependencies
 
    ```bash
@@ -27,7 +16,7 @@ More Info here: [https://reactnative.dev/docs/environment-setup](https://reactna
     npx expo start
    ```
 
-In the output, you'll find options to open the app:
+In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
 - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
@@ -53,11 +42,17 @@ To learn more about developing your project with Expo, look at the following res
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+
 ## Publishing 
 Pushes to Expo server.
 ```
 eas update
 ```
-
-## Other Nodes
-* To upgrade the Expo bundler: `npx expo install expo@latest`

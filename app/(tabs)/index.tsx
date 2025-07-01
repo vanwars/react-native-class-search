@@ -28,22 +28,24 @@ export default function HomeScreen() {
     try {
       setIsLoading(true);
       // Replace this with your actual API endpoint
-      const response = await fetch('https://csci338-p02.onrender.com/api/courses/?department=CSCI');
+      const response = await fetch('https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2025/fall/');
       
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
       
       const data = await response.json();
+      console.log(data)
       // Transform the data to match our DataItem type
-      const formattedData: Course[] = data.map((item: any) => ({
-        code: item.code,
-        title: item.title,
-        hours: item.hours,
-        instructor: item.instructors && item.instructors.length > 0 ? item.instructors[0].full_name : 'TBD',
-        days: item.days ? item.days : 'TBD',
-        department: item.department ? item.department : '',
-        crn: item.crn
+      const csciData = data.filter((item: any) => item.Department === 'CSCI')
+      const formattedData: Course[] = csciData.map((item: any) => ({
+        code: item.Code,
+        title: item.Title,
+        hours: item.Hours,
+        instructor: item.Instructors && item.Instructors.length > 0 ? item.Instructors[0].Name : 'TBD',
+        days: item.Days ? item.Days : 'TBD',
+        department: item.Department ? item.Department : '',
+        crn: item.CRN
       }));
       
       setCourses(formattedData);
