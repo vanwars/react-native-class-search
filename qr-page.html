@@ -248,12 +248,12 @@
     </div>
 
     <script>
-      // Configuration - Your Expo project ID and group ID
+      // Configuration - Your Expo project ID
       const EXPO_PROJECT_ID = "d69c1531-4883-46d4-9bf4-692cdf2729ce";
-      const EXPO_GROUP_ID = "54a8fbb0-57a6-45d7-817a-6b54bdb3dd64";
 
       // The app URL that always points to your latest version
-      const APP_URL = `exp://u.expo.dev/${EXPO_PROJECT_ID}/group/${EXPO_GROUP_ID}`;
+      // Using the default channel - this URL will always work
+      const APP_URL = `exp://u.expo.dev/${EXPO_PROJECT_ID}/channel/default`;
 
       // Function to generate QR code
       function generateQRCode(url) {

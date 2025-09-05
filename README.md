@@ -54,9 +54,9 @@ To learn more about developing your project with Expo, look at the following res
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
 ## Publishing 
-Pushes to Expo server.
+Pushes to Expo server. If you use the `--chanel default` flag, the QR code will always point to the latest release.
 ```
-eas update
+eas update --channel default
 ```
 
 ## Other Nodes
