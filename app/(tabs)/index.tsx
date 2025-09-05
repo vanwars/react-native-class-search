@@ -67,7 +67,7 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/treeline.jpg')}
+          source={require('@/assets/images/poplars.jpg')}
           style={styles.image}
           resizeMode="cover"
         />

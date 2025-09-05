@@ -12,7 +12,7 @@ export default function TabTwoScreen() {
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={
         <Image
-                  source={require('@/assets/images/banner1.jpg')}
+                  source={require('@/assets/images/poplars.jpg')}
                   style={styles.image}
                   resizeMode="cover"
                 />
