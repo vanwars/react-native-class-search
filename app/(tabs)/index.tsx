@@ -73,7 +73,7 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">UNCA Computer Science Courses</ThemedText>
+        <ThemedText type="title">UNCA Computer Science Courses - HI AJ!</ThemedText>
       </ThemedView>
       
       {/* Display loading state */}
